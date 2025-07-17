@@ -1,0 +1,31 @@
+{
+  "lamps": [
+    {
+      "id": "sanlight_q6w",
+      "name": "Sanlight Q6W Gen2",
+      "type": "LED",
+      "watt": 245,
+      "ppf": 624,
+      "eff": 2.54,
+      "min_area": [80,80],
+      "max_area": [120,120],
+      "price": 565
+    }
+  ],
+  "fans": [
+    {
+      "id": "primaklima_ecfan",
+      "name": "PrimaKlima EC-Lüfter 150mm",
+      "flow_m3h": 500,
+      "price": 120
+    }
+  ],
+  "vents": [
+    {
+      "id": "basic_ventilator",
+      "name": "Büro‑Ventilator 30W",
+      "flow_m3h": 200,
+      "price": 30
+    }
+  ]
+}

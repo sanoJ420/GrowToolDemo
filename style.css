@@ -1,0 +1,4 @@
+body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 1rem; }
+header h1 { text-align: center; }
+.controls section { margin-bottom: 1rem; }
+#warnings { color: darkorange; }

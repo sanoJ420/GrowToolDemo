@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Growkit‑Kalkulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>Growkit‑Kalkulator</h1></header>
+  <main>
+    <div class="controls">
+      <section id="zelt-section">
+        <h2>Zelt (cm)</h2>
+        Breite: <input id="zelt-b" type="number" value="100" />  
+        Tiefe: <input id="zelt-t" type="number" value="100" />
+      </section>
+
+      <section id="lamp-section">
+        <h2>Lampe</h2>
+        <select id="lamp-select"></select>
+      </section>
+
+      <section id="luft-section">
+        <h2>Lüfter</h2>
+        <select id="fan-select"></select>
+      </section>
+
+      <section id="vent-section">
+        <h2>Ventilator</h2>
+        <select id="vent-select"></select>
+      </section>
+
+      <section class="mode">
+        <h2>Mode</h2>
+        <label><input name="mode" type="radio" value="basic" checked /> Basic</label>
+        <label><input name="mode" type="radio" value="pro" /> Pro</label>
+      </section>
+    </div>
+
+    <section id="results">
+      <h2>Ergebnisse</h2>
+      <div id="warnings"></div>
+      <div id="basic-results"></div>
+      <div id="pro-results"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
