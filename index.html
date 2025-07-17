@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Growkit‑Kalkulator</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Growkit Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header><h1>Growkit‑Kalkulator</h1></header>
-  <main>
-    <div class="controls">
-      <section id="zelt-section">
-        <h2>Zelt (cm)</h2>
-        Breite: <input id="zelt-b" type="number" value="100" />  
-        Tiefe: <input id="zelt-t" type="number" value="100" />
-      </section>
+    <div class="container">
+        <h1>Growkit Kalkulator</h1>
 
-      <section id="lamp-section">
-        <h2>Lampe</h2>
-        <select id="lamp-select"></select>
-      </section>
+        <div class="mode-toggle">
+            <label><input type="radio" name="mode" value="basic" checked /> Basic</label>
+            <label><input type="radio" name="mode" value="pro" /> Pro</label>
+        </div>
 
-      <section id="luft-section">
-        <h2>Lüfter</h2>
-        <select id="fan-select"></select>
-      </section>
+        <div class="form-group">
+            <label for="zelt">Growzelt</label>
+            <select id="zelt"></select>
+        </div>
+        <div class="form-group">
+            <label for="lampe">Lampe</label>
+            <select id="lampe"></select>
+        </div>
+        <div class="form-group">
+            <label for="luefter">Lüfter</label>
+            <select id="luefter"></select>
+        </div>
+        <div class="form-group">
+            <label for="ventilator">Umluftventilator</label>
+            <select id="ventilator"></select>
+        </div>
 
-      <section id="vent-section">
-        <h2>Ventilator</h2>
-        <select id="vent-select"></select>
-      </section>
+        <button id="calculateBtn">Berechnen</button>
 
-      <section class="mode">
-        <h2>Mode</h2>
-        <label><input name="mode" type="radio" value="basic" checked /> Basic</label>
-        <label><input name="mode" type="radio" value="pro" /> Pro</label>
-      </section>
+        <div id="result"></div>
     </div>
 
-    <section id="results">
-      <h2>Ergebnisse</h2>
-      <div id="warnings"></div>
-      <div id="basic-results"></div>
-      <div id="pro-results"></div>
-    </section>
-  </main>
-  <script src="app.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
